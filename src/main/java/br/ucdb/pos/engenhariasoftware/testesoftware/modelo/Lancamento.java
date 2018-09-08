@@ -32,6 +32,20 @@ import static br.ucdb.pos.engenhariasoftware.testesoftware.util.Constantes.DD_MM
 @EqualsAndHashCode(of = {"id"})
 public class Lancamento {
 
+	public Lancamento()
+	{
+
+	}
+
+	public Lancamento(String descricao, BigDecimal valor, Date dataLancamento, TipoLancamento tipoLancamento, Categoria categoria)
+	{
+		setDescricao(descricao);
+		setValor(valor);
+		setDataLancamento(dataLancamento);
+		setTipoLancamento(tipoLancamento);
+		setCategoria(categoria);
+	}
+
 
 	@Id
 	@GeneratedValue
